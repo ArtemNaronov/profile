@@ -8,6 +8,10 @@
 </template>
 
 <style lang="scss" scope>
+$white: #fff;
+$red: #ff0000;
+$blue: #2f00ff;
+$gradient: linear-gradient(90deg, $white 0.85%, $blue 52.93%, $red 100.85%);
 nav {
     position: fixed;
     height: 86px;
