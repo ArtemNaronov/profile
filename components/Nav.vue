@@ -17,7 +17,7 @@ nav {
     justify-content: center;
     gap: 24px;
     width: 100%;
-    background-color: rgba($color: $black, $alpha: .9);
+    background-color: rgba($color: #000, $alpha: .9);
     backdrop-filter: blur(8px);
     z-index: 2;
     
