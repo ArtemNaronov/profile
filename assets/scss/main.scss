@@ -1,0 +1,113 @@
+
+@import 'colors';
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('/assets/fonts/Roboto-Regular.ttf');
+}
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+}
+
+body {
+    background-color: $black;
+    color: $white;
+}
+
+.container {
+    margin-inline: auto;
+    padding: 30px 0;
+    width: clamp(300px, 80%, 1500px);
+}
+
+h1 {
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 120%; /* 108px */
+    letter-spacing: -0.9px;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 150%;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 130%;
+}
+
+.subtitle {
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.lg {
+    font-size: 1.1rem;    
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.md {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 150%;
+}
+
+.sm {
+    font-size: .8rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+}
+
+.lab-md {
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5rem; 
+}
+
+.btn {    
+    display: block;
+    width: fit-content;
+    border-radius: 8px;
+    color: $white;
+    text-decoration: none;
+    border: 1px solid $white;
+    padding: 12px 24px;
+    transition: color, .3s;
+}
+
+.btn:active,
+.btn:hover {
+    color: $black;
+    background-color: $white;
+}
+
+.link {
+    color: $white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border: 1px solid transparent;
+
+    &:hover,
+    &.active {
+        border-radius: 8px;
+        border: 1px solid $gray;
+        background: $black-light;
+    }
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
