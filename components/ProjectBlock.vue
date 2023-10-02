@@ -23,6 +23,11 @@ console.log(props.item);
 </script>
 
 <style lang="scss" scoped>
+    $black: #0A0A0A;
+    $black-light: #121212;
+    $gray: #3B3B3B;
+    $white-dark: #B3B3B3;
+    $white: #FFFFFF;
 
     .project {
         display: flex;
