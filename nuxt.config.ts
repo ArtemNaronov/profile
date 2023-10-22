@@ -2,6 +2,10 @@
 
 export default defineNuxtConfig({
   css: ['~/assets/scss/main.scss'],
+  modules: [
+    'nuxt-aos'
+  ],
+  plugins: [{ src: '~/plugins/aos.js', mode: 'client' }],
   vite: {
     css: {
       preprocessorOptions: {

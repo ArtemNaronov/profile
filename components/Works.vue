@@ -2,9 +2,9 @@
     <section id="works" class="works">
         <section>
             <h2>Мои работы</h2>
-            <p class="lg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa molestiae suscipit incidunt quod officiis perspiciatis amet ut neque rerum quia!</p>
+            <p class="lg" data-aos="fade-right">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa molestiae suscipit incidunt quod officiis perspiciatis amet ut neque rerum quia!</p>
         
-            <ProjectBlock v-for="item in data" :item="item" />
+            <ProjectBlock v-for="item in data" :item="item" :key="item.id" data-aos="fade-left" />
         
         </section>
     </section>
@@ -14,6 +14,7 @@
 
     const data = [
         {
+            id: 1,
             title: 'Ecommerce',
             date: '2022',
             type: 'front-end',

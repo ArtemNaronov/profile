@@ -7,7 +7,7 @@
             accusamus minus aliquid ea soluta voluptas, corrupti natus, doloribus 
             numquam adipisci. Veniam quas vitae rerum nesciunt.
         </p>        
-        <img class="photo" src="@/assets/images/F0DEkLbecbY-transformed.png" alt="" srcset="">
+        <img class="photo" src="@/assets/images/F0DEkLbecbY-transformed.png" alt="" srcset="" data-aos="fade-left">
     </section>
 </template>
 
@@ -25,7 +25,7 @@
         position: absolute;
         right: 0;
         width: clamp(300px, 50%, 25%);
-        top: 50%;
+        top: 86px;
         height: auto;
         transform: translateY(-50%);
         -webkit-filter: contrast(150%) brightness(90%) opacity(0.5);

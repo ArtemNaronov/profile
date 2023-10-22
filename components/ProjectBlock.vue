@@ -19,7 +19,6 @@
 const props = defineProps({
   item: Object
 })
-console.log(props.item);
 </script>
 
 <style lang="scss" scoped>
@@ -64,6 +63,7 @@ console.log(props.item);
                 margin: 0 50px;
 
                 &:hover .wrapper {
+                    border-radius: 24px;
                     transform: perspective(900px) translateY(-5%) rotateX(25deg) translateZ(0);
                     box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
                     -webkit-box-shadow: 2px 35px 32px -8px rgba(0, 0, 0, 0.75);
@@ -87,6 +87,10 @@ console.log(props.item);
                 width: 100%;
                 z-index: -1;
 
+                img {
+                    border-radius: 24px;
+                }
+
                 &::before,
                 &::after {
                     content: "";
@@ -96,6 +100,7 @@ console.log(props.item);
                     transition: all 0.5s;
                     position: absolute;
                     left: 0;
+                    border-radius: 24px;
                 }
 
                 &::before {
